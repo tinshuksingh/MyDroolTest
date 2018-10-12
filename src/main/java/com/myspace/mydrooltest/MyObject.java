@@ -6,12 +6,23 @@ package com.myspace.mydrooltest;
 
 public class MyObject implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public MyObject() {
-    }
+	private java.lang.String myField;
 
+	public MyObject() {
+	}
 
+	public java.lang.String getMyField() {
+		return this.myField;
+	}
 
+	public void setMyField(java.lang.String myField) {
+		this.myField = myField;
+	}
+
+	public MyObject(java.lang.String myField) {
+		this.myField = myField;
+	}
 
 }
