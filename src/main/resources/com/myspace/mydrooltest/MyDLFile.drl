@@ -1,2 +1,9 @@
 package com.myspace.mydrooltest;
 
+rule "one"
+ when
+    MyObject(myField == "hello")
+ then
+end
+    
+    
